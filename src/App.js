@@ -23,6 +23,7 @@ export default function App() {
       <hr />
       <SongPlaylist />
       <h2>testing footer3</h2>
+      <h2>testing footer4</h2>
     </div>
   );
 }
