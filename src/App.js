@@ -22,7 +22,7 @@ export default function App() {
       <MoviePlaylist />
       <hr />
       <SongPlaylist />
-      <h2>testing footer</h2>
+      <h2>testing footer2</h2>
     </div>
   );
 }
