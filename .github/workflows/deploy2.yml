@@ -1,4 +1,4 @@
-name: Deploy React App to S3
+name: Deploy React App to ECR
 
 on:
   push:
@@ -38,6 +38,7 @@ jobs:
         run: |
           docker push \
             ${{ secrets.ECR_REGISTRY }}/react-app:latest
+
       - name: Deploy to ECS
         run: |
           aws ecs update-service \
