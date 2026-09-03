@@ -14,17 +14,17 @@ jobs:
       - name: Checkout Repository
         uses: actions/checkout@v4
 
-      - name: Setup Node
-        uses: actions/setup-node@v4
-        with:
-          node-version: 22
-          cache: npm
+      # - name: Setup Node
+      #   uses: actions/setup-node@v4
+      #   with:
+      #     node-version: 22
+      #     cache: npm
 
-      - name: Install Dependencies
-        run: npm install --legacy-peer-deps
+      # - name: Install Dependencies
+      #   run: npm install --legacy-peer-deps
 
-      - name: Run Build
-        run: npm run build
+      # - name: Run Build
+      #   run: npm run build
 
       - name: Configure AWS Credentials
         uses: aws-actions/configure-aws-credentials@v4
@@ -34,6 +34,6 @@ jobs:
           aws-region: ${{ secrets.AWS_REGION }}
 
       # For Vite
-      - name: Deploy to S3
-        run: |
-          aws s3 sync build/ s3://${{ secrets.AWS_BUCKET }} --delete
+      # - name: Deploy to S3
+      #   run: |
+      #     aws s3 sync build/ s3://${{ secrets.AWS_BUCKET }} --delete

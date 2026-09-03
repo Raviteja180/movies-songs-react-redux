@@ -25,6 +25,8 @@ export default function App() {
       <h2>testing footer3</h2>
       <h2>testing footer4</h2>
       <h2>testing footer5</h2>
+      <h2>testing footer5</h2>
+      <h2>testing footer5</h2>
     </div>
   );
 }
